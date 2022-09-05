@@ -52,8 +52,6 @@ func main() {
 	}
 	log.Printf("Public IP discovered as %s", publicIP)
 
-	log.Printf("%+v\n", Config)
-
 	client := godo.NewFromToken(Config.APIKey)
 	recordEdit := updatedRecord(publicIP)
 
