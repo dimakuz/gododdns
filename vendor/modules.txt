@@ -5,7 +5,7 @@ github.com/digitalocean/godo
 github.com/golang/protobuf/proto
 # github.com/google/go-querystring v1.0.0
 github.com/google/go-querystring/query
-# golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4
+# golang.org/x/net v0.7.0
 ## explicit
 golang.org/x/net/context
 golang.org/x/net/context/ctxhttp
