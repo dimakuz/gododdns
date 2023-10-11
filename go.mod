@@ -4,5 +4,5 @@ go 1.16
 
 require (
 	github.com/digitalocean/godo v1.64.2
-	golang.org/x/net v0.7.0 // indirect
+	golang.org/x/net v0.17.0 // indirect
 )
