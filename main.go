@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 	"os"
@@ -23,13 +23,13 @@ func init() {
 }
 
 func GetPublicIP() (string, error) {
-	req, err := http.Get("http://ifconfig.me/")
+	req, err := http.Get("https://ipinfo.io/ip/")
 	if err != nil {
 		return "", nil
 	}
 	defer req.Body.Close()
 
-	body, err := ioutil.ReadAll(req.Body)
+	body, err := io.ReadAll(req.Body)
 	if err != nil {
 		return "", err
 	}
